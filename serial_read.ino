@@ -1,4 +1,4 @@
-int char=0;
+int char_=0;
 void setup() {
   
   Serial.begin(9600);
@@ -8,9 +8,9 @@ void setup() {
 void loop() {
   if (Serial.available>0)
   {
-    char= Serial.read();
+    char_= Serial.read();
     Serial.print("i recieved: ");
-    Serial.println(char);
+    Serial.println(char_);
   }
 
 }
